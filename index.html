@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../resources/semantic.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/cola.css">
+	<link rel="stylesheet" type="text/css" href=""/>
+    <title></title>
+</head>
+<body>
+	<div class="v-box">
+		<div class="h-box">
+			<div c-repeat="item in items" style="height: 100px;width: 100px;background-color: red;float: left;">
+				<span c-bind="item.title"></span>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./resources/jquery-2.1.3.js"></script> 
+	<script src="./resources/3rd.js"></script>
+	<script src="./resources/semantic.js"></script>
+	<script src="./resources/cola.js"></script>
+	<script src="./resources/i18n/zh/cola.js"></script>
+	<script type="text/javascript">
+    	cola(function(model){
+    		
+    		model.set({
+    			items:[{
+    				title:'1111'
+    			},{
+    				title:'1111'
+    			},{
+    				title:'1111'
+    			},{
+    				title:'1111'
+    			}]
+    		});
+    		
+//  		model.widgetConfig({
+//						contents: {
+//			                $type: "label",
+//			                width:"100",
+//			                text: "{{title}}",
+//			            }
+//		        	});
+    	})
+    </script>
+	
+</body>
+</html>
